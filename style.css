@@ -1,0 +1,183 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+} 
+section{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+}
+/*
+body{
+  background-image:url(https://i.pinimg.com/originals/83/1e/4d/831e4d553d4963470b058c26ac68d4ce.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}*/
+.container{
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100vh;
+
+}
+.container span{
+  
+  text-transform: uppercase;
+  display: block;
+}
+
+.text1{
+  color: #47476b;
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  margin-bottom: 20px;
+  background: #ADD8E6;
+  position: relative;
+  animation: text 3s 1;
+  display: block;
+
+}
+.text2{
+  color: #DCAE96;
+  font-size: 30px;
+  
+  
+}
+@keyframes text{
+  0%{
+    color:#47476b;
+    margin-bottom: -40px;
+  }
+  30%{
+    letter-spacing: 25px;
+    margin-bottom: -40px;
+  }
+}
+.text2,.two{
+margin-bottom:100px;
+}
+
+html {
+    background-color: #47476b;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  padding-top: 10%;
+    color: white;
+    
+    font-family: 'PT Serif', serif; 
+    text-align: center;
+    font-size: 100px;
+
+}
+h2 {
+  padding-top: 5%;
+  color: rgb(9, 92, 107);
+  font-family: Courier New;
+  text-align: center;
+}
+
+#container {
+    height: 300px;
+    width: 700px;
+    background-color: #47476b;
+    margin: 0 auto;
+    border: 5px solid white;
+    
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+#Music {
+  text-align: right;
+}
+/*timers*/
+.label {
+    align-self: center;
+    justify-self: center;
+
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#work {
+    grid-area: 1 / 2 / 1 / 2;
+    color:white;
+    font-family: 'PT Serif', serif; 
+}
+#break {
+    grid-area: 1 / 4 / 1 / 4;
+    color:white;
+    font-family: 'PT Serif', serif; 
+}
+#cycles {
+    grid-area: 1 / 3 / 1 / 3;
+    color:white;
+    font-family: 'PT Serif', serif; 
+}
+
+.timer {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+
+    font-size: 30px;
+    font-weight: bold;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+#counter {
+    grid-area: 2 / 3 / 2 / 3;
+    color: white;
+}
+
+#work-timer {
+    grid-area: 2 / 2 / 2 / 2;
+    color: white;
+}
+
+#break-timer {
+    grid-area: 2 / 4 / 2 / 4;
+    color: white;
+}
+
+/*buttons*/
+
+.btn {
+    align-self: center;
+    justify-self: center;
+
+    width: 100px;
+    height: 30px;
+
+    font-size: 20px;
+   
+    font-family: 'PT Serif', serif; 
+}
+
+#start {
+    grid-area: 3 / 2 / 3 / 2;
+}
+
+#reset {
+    grid-area: 3 / 4 / 3 / 4;
+}
+
+#stop {
+    grid-area: 3 / 3 / 3 / 3;
+}
